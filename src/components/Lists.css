@@ -1,0 +1,15 @@
+.mylists {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.mylists ul {
+    list-style-type: none;
+    border: 1px solid #cccaca;
+    padding: 12px;
+}
+
+.mylists li {
+    padding: 5px;
+}
