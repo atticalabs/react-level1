@@ -5,12 +5,11 @@ import { useDispatch } from 'react-redux'
 import { mySliceActions } from '../store/slice'
 import { useHistory } from 'react-router-dom';
 function Todolist() {
-    //const [task, setTask] = useState([]);
+    
     const [listItems, setListItems] = useState([]);
     const task = useRef("");
     const dispatch = useDispatch();
     const history = useHistory();
-
   
 
     function submitHandler(e) {
