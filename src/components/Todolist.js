@@ -11,10 +11,14 @@ function Todolist() {
         e.preventDefault();
     }
     function addItem() {
-        setListItems([
-            ...listItems,
-            task.current.value
-        ]);
+        var newArr = [...listItems, task.current.value];
+        setListItems(newArr);
+        task.current.value = '';
+    }
+    function deleteItem(index, e) {
+        var newArr = [...listItems];
+        newArr.splice(index, 1);
+        setListItems(newArr);
     }
     return (
         <div className="todolist">
@@ -25,7 +29,7 @@ function Todolist() {
             <div>
                 {
                     listItems.map((item, index) => {
-                        return <Items key={index} text={item}/>;
+                        return <Items key={index} text={item} ondelete={(e) => deleteItem(index, e)} />;
                     })
                 }
             </div>
