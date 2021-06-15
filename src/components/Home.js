@@ -18,8 +18,7 @@ function Home() {
                     <div style={{marginTop:"30px"}}>
                         <img src={lists} alt="result" style={{ width: '100%' }} />
                     </div>
-                </ul>
-                
+                </ul>                
             </div>
             <div>
             <Link to="todo">
