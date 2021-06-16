@@ -1,22 +1,26 @@
 import { Link } from 'react-router-dom';
-import savebtn from '../images/savebtn.png';
-import lists from '../images/lists.png';
+import details from '../images/details.png';
+import detailsStats from '../images/detailsStats.png';
 function Home() {
     return (
         <div>
-            <h1>React Level 2</h1>            
-            <h5>(Use Redux Toolkit recommended)</h5>
+            <h1>React Level 3</h1>            
+            <h5>In this final challenge</h5>
             <div style={{ width: '450px', margin: '0 auto', textAlign: 'left' }}>
                 <ul>
-                    <li>Add a save button in Todolist</li>
-                    <div style={{marginBottom:"10px"}}>
-                        <img src={savebtn} alt="result" style={{ width: '100%' }} />
+                    <li>Add a details link on each list</li>
+                    <div style={{marginTop:"10px"}}>
+                        <img src={details} alt="result" style={{ width: '100%' }} />
                     </div>                    
-                    <li>When click on save: Navigate to a Lists component</li>                    
-                    <li>In List component show a list of lists</li>
-                    <li>In List component create a link to navigate back to Todolist</li>
+                    <li>When click on details: Navigate to a Details component</li>                    
+                    <li>In Details component show that particular list</li>
+                    <li>In Details component show stats fetched from API</li>
+                    
+                    <li>API URL: <pre>https://www.therogerlab.com/examples/lists-stats.php</pre></li>
+                    <li>JSON Response: <pre>"success":"ok","total": 56,"done": 50,"delayed": 6</pre></li>
+                    <li>Add a link to navigate back to Lists components</li>                    
                     <div style={{marginTop:"30px"}}>
-                        <img src={lists} alt="result" style={{ width: '100%' }} />
+                        <img src={detailsStats} alt="result" style={{ width: '100%' }} />
                     </div>
                 </ul>                
             </div>

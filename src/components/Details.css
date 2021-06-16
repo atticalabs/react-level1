@@ -1,0 +1,25 @@
+.myDetails {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.myDetails ul {
+    list-style-type: none;
+    border: 1px solid #cccaca;
+    padding: 12px;
+}
+
+.myDetails li {
+    padding: 5px;
+}
+
+.myDetails .goback {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}

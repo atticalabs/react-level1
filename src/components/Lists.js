@@ -15,7 +15,16 @@ function Lists(props) {
                         var aList = item.value.map(function (value, index) {
                             return <li key={index}>{value}</li>;
                         });
-                        return <ul key={index}>{aList}</ul>;
+                        return (
+                            <ul key={index}>
+                                {aList}
+                                <li className="detailsLink">
+                                    <Link to={"details/"+index}>
+                                       See details
+                                    </Link>
+                                </li>
+                            </ul>
+                        );
                     })
                 }
             </div>

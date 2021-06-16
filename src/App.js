@@ -2,6 +2,7 @@
 import Todolist from "./components/Todolist";
 import Home from "./components/Home";
 import Lists from "./components/Lists";
+import Details from "./components/Details";
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path='/lists'>
             <Lists />
+          </Route>
+          <Route path='/details/:id'>
+            <Details />
           </Route>
           <Route path='/'>
             <Home />
